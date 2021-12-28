@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.count-box {
+  min-width: 90px;
+  width: fit-content;
+  height: fit-content;
+  background-color: dodgerblue;
+  border-radius: 16px 8px 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: default;
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.count-box h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.decrease-btn,
+.increase-btn {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 2rem;
+  width: 50px;
+  height: 50px;
+  color: #222;
+  opacity: 0.5;
+}
+
+.decrease-btn:hover,
+.increase-btn:hover,
+.reset-btn:hover {
+  opacity: 1;
+}
+
+.reset-btn {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #222;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 500px) {
+  #root {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    margin-top: 5rem;
+  }
+}
